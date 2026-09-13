@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo Vệ Môi Trường Xanh – Hành Động Vì Tương Lai</title>
+    <style>
+        /* CSS DÙNG ĐỂ TRANG TRÍ VÀ CẤU TRÚC GIAO DIỆN */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .goal-section {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-left: 5px solid #2e7d32;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .goal-section h2 {
+            color: #1b5e20;
+            margin-bottom: 10px;
+        }
+
+        .goal-section ul {
+            margin-left: 20px;
+        }
+
+        .topic-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .topic-title {
+            color: #2e7d32;
+            border-bottom: 2px solid #a5d6a7;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background: #fafafa;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #eee;
+        }
+
+        .info-box h4 {
+            color: #388e3c;
+            margin-bottom: 5px;
+        }
+
+        /* KHU VỰC TRÒ CHƠI */
+        .game-section {
+            background: #f1f8e9;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .game-box {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            border: 1px solid #c8e6c9;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #388e3c;
+        }
+
+        select {
+            padding: 6px;
+            margin-top: 5px;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .result-msg {
+            margin-top: 8px;
+            font-weight: bold;
+            color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TÊN TRANG WEB -->
+    <header>
+        <h1>Bảo Vệ Môi Trường Xanh</h1>
+        <p>Hành động nhỏ - Ý nghĩa lớn cho trái đất của chúng ta</p>
+    </header>
+
+    <!-- MỤC TIÊU TRANG WEB -->
+    <section class="goal-section">
+        <h2>Mục tiêu trang web</h2>
+        <ul>
+            <li>Nâng cao nhận thức cộng đồng về ô nhiễm môi trường ở các môi trường sống khác nhau.</li>
+            <li>Cung cấp thông tin đầy đủ về Thực trạng - Nguyên nhân - Hậu quả - Giải pháp cụ thể.</li>
+            <li>Tạo các trò chơi tương tác trực quan giúp ghi nhớ kiến thức bảo vệ môi trường dễ dàng hơn.</li>
+        </ul>
+    </section>
+
+    <!-- CHỦ ĐỀ 1 -->
+    <article class="topic-card">
+        <h2 class="topic-title">Chủ đề 1: Bảo vệ môi trường tại khu dân cư và đô thị</h2>
+        
+        <div class="info-grid">
+            <div class="info-box">
+                <h4>Thực trạng</h4>
+                <p>Rác thải sinh hoạt xả bừa bãi ra đường, kênh rạch; bụi mịn và tiếng ồn vượt ngưỡng tại các đô thị lớn.</p>
+            </div>
+            <div class="info-box">
+                <h4>Nguyên nhân</h4>
+                <p>Ý thức phân loại rác kém, mật độ giao thông cá nhân cao, thói quen dùng đồ nhựa 1 lần.</p>
+            </div>
+            <div class="info-box">
+                <h4>Hậu quả</h4>
+                <p>Gây tắc nghẽn cống rãnh, ngập lụt, tăng bệnh về đường hô hấp và giảm chất lượng cuộc sống.</p>
+            </div>
+            <div class="info-box">
+                <h4>Giải pháp</h4>
+                <p>Phân loại rác tại nguồn, ưu tiên xe buýt/xe điện, tham gia tổng vệ sinh xóm phố định kỳ.</p>
+            </div>
+        </div>
+
+        <!-- Trò chơi của Chủ đề 1 -->
+        <div class="game-section">
+            <h3>🎮 Trò chơi tương tác - Chủ đề 1</h3>
+
+            <!-- Trò chơi 1.1 -->
+            <div class="game-box">
+                <h4>Trò chơi 1: Phân loại rác thải nhanh</h4>
+                <p>Rác thải: <b>"Vỏ dưa hấu"</b> thuộc loại rác nào?</p>
+                <select id="game1-select">
+                    <option value="">-- Chọn loại rác --</option>
+                    <option value="huu-co">Rác hữu cơ</option>
+                    <option value="tai-che">Rác tái chế</option>
+                    <option value="vo-co">Rác vô cơ / Khác</option>
+                </select>
+                <button onclick="checkGame1()">Kểm tra</button>
+                <div id="game1-result" class="result-msg"></div>
+            </div>
+
+            <!-- Trò chơi 1.2 -->
+            <div class="game-box">
+                <h4>Trò chơi 2: Đo lường Dấu chân Carbon giao thông</h4>
+                <p>Bạn thường đi học/đi làm bằng phương tiện gì hàng ngày?</p>
+                <select id="game2-select">
+                    <option value="">-- Chọn phương tiện --</option>
+                    <option value="walk">Đi bộ / Xe đạp (0 kg CO2)</option>
+                    <option value="bus">Xe buýt công cộng (Thấp)</option>
+                    <option value="motorbike">Xe máy cá nhân (Trung bình)</option>
+                </select>
+                <button onclick="checkGame2()">Xem đánh giá</button>
+                <div id="game2-result" class="result-msg"></div>
+            </div>
+        </div>
+    </article>
+
+    <!-- CHỦ ĐỀ 2 -->
+    <article class="topic-card">
+        <h2 class="topic-title">Chủ đề 2: Bảo vệ môi trường biển và bãi biển</h2>
+        
+        <div class="info-grid">
+            <div class="info-box">
+                <h4>Thực trạng</h4>
+                <p>Bãi biển bị bao phủ bởi rác thải nhựa, hệ sinh thái san hô ven bờ bị tàn phá nặng nề.</p>
+            </div>
+            <div class="info-box">
+                <h4>Nguyên nhân</h4>
+                <p>Xả rác du lịch, đánh bắt bằng chất nổ/hóa chất, rác thải từ sông đổ ra biển.</p>
+            </div>
+            <div class="info-box">
+                <h4>Hậu quả</h4>
+                <p>Sinh vật biển nuốt phải nhựa dẫn đến tử vong, rạn san hô chết, hạt vi nhựa đi vào chuỗi thức ăn.</p>
+            </div>
+            <div class="info-box">
+                <h4>Giải pháp</h4>
+                <p>Mang bình nước cá nhân khi du lịch, gom rác bãi biển, không mua sản phẩm từ san hô/sinh vật biển.</p>
+            </div>
+        </div>
+
+        <!-- Trò chơi của Chủ đề 2 -->
+        <div class="game-section">
+            <h3>🎮 Trò chơi tương tác - Chủ đề 2</h3>
+
+            <!-- Trò chơi 2.1 -->
+            <div class="game-box">
+                <h4>Trò chơi 1: Giải cứu sinh vật biển</h4>
+                <p>Thời gian để 1 chai nhựa phân hủy hoàn toàn dưới biển là bao lâu?</p>
+                <select id="game3-select">
+                    <option value="">-- Chọn số năm --</option>
+                    <option value="50">50 năm</option>
+                    <option value="100">100 năm</option>
+                    <option value="450">Khoảng 450 năm</option>
+                </select>
+                <button onclick="checkGame3()">Kiểm tra</button>
+                <div id="game3-result" class="result-msg"></div>
+            </div>
+
+            <!-- Trò chơi 2.2 -->
+            <div class="game-box">
+                <h4>Trò chơi 2: Hành động đúng khi đi du lịch biển</h4>
+                <p>Khi thấy rác nhựa trôi bồng bềnh gần bờ biển, bạn nên làm gì?</p>
+                <select id="game4-select">
+                    <option value="">-- Chọn hành động --</option>
+                    <option value="ignore">Mặc kệ vì không phải rác của mình</option>
+                    <option value="collect">Nhặt lên và bỏ vào thùng rác trên bờ</option>
+                    <option value="push">Đẩy rác ra xa hơn</option>
+                </select>
+                <button onclick="checkGame4()">Xác nhận</button>
+                <div id="game4-result" class="result-msg"></div>
+            </div>
+        </div>
+    </article>
+
+    <!-- CHỦ ĐỀ 3 -->
+    <article class="topic-card">
+        <h2 class="topic-title">Chủ đề 3: Bảo vệ môi trường rừng và hệ sinh thái tự nhiên</h2>
+        
+        <div class="info-grid">
+            <div class="info-box">
+                <h4>Thực trạng</h4>
+                <p>Rừng tự nhiên bị thu hẹp diện tích rapidly, cháy rừng diễn ra phức tạp vào mùa khô.</p>
+            </div>
+            <div class="info-box">
+                <h4>Nguyên nhân</h4>
+                <p>Chặt phá rừng trái phép làm nương rẫy/lấy gỗ, du khách cắm trại đốt lửa bất cẩn.</p>
+            </div>
+            <div class="info-box">
+                <h4>Hậu quả</h4>
+                <p>Mất cân bằng hệ sinh thái, xói mòn đất, lũ quét, tăng nguy cơ biến đổi khí hậu.</p>
+            </div>
+            <div class="info-box">
+                <h4>Giải pháp</h4>
+                <p>Tăng cường trồng cây gây rừng, tiết kiệm giấy/gỗ, cẩn trọng tuyệt đối với lửa trong rừng.</p>
+            </div>
+        </div>
+
+        <!-- Trò chơi của Chủ đề 3 -->
+        <div class="game-section">
+            <h3>🎮 Trò chơi tương tác - Chủ đề 3</h3>
+
+            <!-- Trò chơi 3.1 -->
+            <div class="game-box">
+                <h4>Trò chơi 1: Kiểm lâm tí hon (Kiểm tra kiến thức lửa)</h4>
+                <p>Hành động nào an toàn nhất khi dập lửa cắm trại trong rừng?</p>
+                <select id="game5-select">
+                    <option value="">-- Chọn cách dập lửa --</option>
+                    <option value="water">Dập hoàn toàn bằng nước/đất cát và kiểm tra kỹ</option>
+                    <option value="leave">Chỉ cần thổi tắt ngọn lửa lớn rồi đi</option>
+                </select>
+                <button onclick="checkGame5()">Kiểm tra</button>
+                <div id="game5-result" class="result-msg"></div>
+            </div>
+
+            <!-- Trò chơi 3.2 -->
+            <div class="game-box">
+                <h4>Trò chơi 2: Đố vui tác dụng của rừng</h4>
+                <p>Rừng được mệnh danh là gì đối với Trái Đất?</p>
+                <select id="game6-select">
+                    <option value="">-- Chọn đáp án --</option>
+                    <option value="lung">Lá phổi xanh</option>
+                    <option value="heart">Trái tim xanh</option>
+                    <option value="shield">Khiên chắn bạc</option>
+                </select>
+                <button onclick="checkGame6()">Kiểm tra</button>
+                <div id="game6-result" class="result-msg"></div>
+            </div>
+        </div>
+    </article>
+
+    <!-- JAVASCRIPT XỬ LÝ CÁC TRÒ CHƠI -->
+    <script>
+        // Xử lý Chủ đề 1
+        function checkGame1() {
+            const val = document.getElementById('game1-select').value;
+            const res = document.getElementById('game1-result');
+            if (val === 'huu-co') {
+                res.innerHTML = "✅ Chính xác! Vỏ dưa hấu là rác hữu cơ, có thể ủ làm phân bón.";
+                res.style.color = "green";
+            } else if (val === '') {
+                res.innerHTML = "⚠️ Vui lòng chọn một đáp án.";
+                res.style.color = "orange";
+            } else {
+                res.innerHTML = "❌ Chưa đúng rồi, vỏ dưa hấu dễ phân hủy nên là rác hữu cơ nhé!";
+                res.style.color = "red";
+            }
+        }
+
+        function checkGame2() {
+            const val = document.getElementById('game2-select').value;
+            const res = document.getElementById('game2-result');
+            if (val === 'walk') {
+                res.innerHTML = "🌟 Tuyệt vời! Bạn đang góp phần giảm tối đa khí thải CO2.";
+            } else if (val === 'bus') {
+                res.innerHTML = "👍 Rất tốt! Sử dụng phương tiện công cộng giúp giảm ùn tắc và ô nhiễm.";
+            } else if (val === 'motorbike') {
+                res.innerHTML = "💡 Lựa chọn phổ biến. Nếu có thể, hãy thử đi chung xe hoặc đi xe đạp nhé!";
+            } else {
+                res.innerHTML = "⚠️ Vui lòng chọn phương tiện.";
+            }
+            res.style.color = "#1b5e20";
+        }
+
+        // Xử lý Chủ đề 2
+        function checkGame3() {
+            const val = document.getElementById('game3-select').value;
+            const res = document.getElementById('game3-result');
+            if (val === '450') {
+                res.innerHTML = "✅ Chính xác! Một chai nhựa mất tới khoảng 450 năm để phân hủy.";
+                res.style.color = "green";
+            } else {
+                res.innerHTML = "❌ Sai rồi! Thời gian phân hủy của nhựa lâu hơn bạn nghĩ rất nhiều (450 năm).";
+                res.style.color = "red";
+            }
+        }
+
+        function checkGame4() {
+            const val = document.getElementById('game4-select').value;
+            const res = document.getElementById('game4-result');
+            if (val === 'collect') {
+                res.innerHTML = "✅ Đúng rồi! Một hành động nhỏ của bạn giúp cứu sống nhiều sinh vật biển.";
+                res.style.color = "green";
+            } else {
+                res.innerHTML = "❌ Hãy chủ động nhặt rác để bảo vệ đại dương nhé!";
+                res.style.color = "red";
+            }
+        }
+
+        // Xử lý Chủ đề 3
+        function checkGame5() {
+            const val = document.getElementById('game5-select').value;
+            const res = document.getElementById('game5-result');
+            if (val === 'water') {
+                res.innerHTML = "✅ Chuẩn xác! Cần dập tắt hoàn toàn tàn lửa để tránh nguy cơ bùng phát cháy rừng.";
+                res.style.color = "green";
+            } else {
+                res.innerHTML = "❌ Rất nguy hiểm! Tàn đỏ còn sót lại có thể gây cháy rừng nghiêm trọng.";
+                res.style.color = "red";
+            }
+        }
+
+        function checkGame6() {
+            const val = document.getElementById('game6-select').value;
+            const res = document.getElementById('game6-result');
+            if (val === 'lung') {
+                res.innerHTML = "✅ Chính xác! Rừng là 'Lá phổi xanh' giúp cung cấp oxy và điều hòa không khí.";
+                res.style.color = "green";
+            } else {
+                res.innerHTML = "❌ Chưa chính xác, đáp án đúng là 'Lá phổi xanh'.";
+                res.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
